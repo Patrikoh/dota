@@ -9,6 +9,7 @@ const mapStateToProps = (state) => {
         filter: state.album.filter
     }
 }
+
 const mapDispatchToProps = (dispatch) => {
     return {
         addPhoto: (newPhoto) => {
