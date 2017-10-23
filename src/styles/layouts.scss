@@ -1,0 +1,161 @@
+@import 'variables.scss';
+
+//flex
+.l-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.l-rows {
+    display: flex;
+    flex-direction: column;
+}
+
+.l-flex {
+    flex: 1;
+}
+
+.l-flex--2 {
+    flex: 2;
+}
+
+.l-flex--3 {
+    flex: 3;
+}
+
+.l-flex--8 {
+    flex: 8;
+}
+
+.l-empty--flex {
+    flex: 1;
+}
+//heights and widths
+.l-height--small {
+    height: $grid-size;
+}
+
+.l-height--medium {
+    height: $grid-size * 5;
+}
+
+.l-height--big {
+    height: $grid-size * 10;
+}
+
+.l-height--100 {
+    height: 100%;
+}
+
+.l-height--100-top {
+    height: calc(100% - 150px);
+}
+
+.l-min-height--big {
+    min-height: $grid-size * 50;
+}
+
+.l-width--100 {
+    width: 100%;
+}
+
+.l-width--75 {
+    width: 75%;
+}
+
+.l-width--40 {
+    width: 40%;
+}
+
+.l-width--image {
+    width: $grid-size * 20;
+}
+
+.l-min-width--big {
+    min-width: $grid-size * 50;
+}
+//margins and paddings
+.l-padding-sides--big {
+    padding-left: $grid-size * 15;
+    padding-right: $grid-size * 15;
+}
+
+.l-padding-sides--small {
+    padding-left: $grid-size * 4;
+    padding-right: $grid-size * 4;
+}
+
+
+.l-padding-left--small {
+    padding-left: $grid-size * 0.5;
+}
+
+.l-padding-right--small {
+    padding-right: $grid-size * 0.5;
+}
+
+.l-padding-top--small {
+    padding-top: $grid-size * 0.5;
+}
+
+.l-padding-bottom--small {
+    padding-bottom: $grid-size * 0.5;
+}
+
+.l-padding-bottom--medium {
+    padding-bottom: $grid-size;
+}
+
+.l-padding-right--medium {
+    padding-right: $grid-size;
+}
+
+.l-padding-left--medium {
+    padding-left: $grid-size;
+}
+
+.l-padding-top--medium {
+    padding-top: $grid-size;
+}
+
+.l-padding-left--big {
+    padding-left: $grid-size * 2;
+}
+
+.l-padding-right--big {
+    padding-right: $grid-size * 2;
+}
+
+.l-padding-top--huge {
+    padding-top: $grid-size * 15;
+}
+
+.l-margin-top--big {
+    margin-top: $grid-size * 6.5;
+}
+
+.l-margin-top--huge {
+    margin-top: $grid-size * 15;
+}
+
+.l-float--left {
+    float: left;
+}
+
+.l-float--right {
+    float: right;
+}
+
+.l-text-align--right {
+    text-align: right;
+}
+
+.l-overflow--scroll {
+    overflow-y: auto;
+}
+
+
+.l-overflow--hidden {
+    overflow: hidden;
+}

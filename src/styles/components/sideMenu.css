@@ -1,0 +1,14 @@
+.side-menu {
+  flex: 1;
+  padding-top: 100px;
+  height: 100%;
+  background-color: #524e5f;
+  color: #ccc; }
+
+.side-menu__menu {
+  font-weight: 400;
+  display: flex;
+  flex-direction: column; }
+  .side-menu__menu .menu-item {
+    flex: 1;
+    min-width: 200px; }
