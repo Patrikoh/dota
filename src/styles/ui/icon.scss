@@ -1,0 +1,19 @@
+@import 'styles/variables.scss';
+
+.icon-wrapper {
+    background-color: #e2ae60;
+    max-width: 40px;
+    max-height: 40px;
+}
+
+.icon {
+    padding: 10px;
+
+    &.icon--white {
+        fill: #fff !important;
+    }
+}
+
+.icon-wrapper:hover {
+    background-color: #b58a4a;
+}

@@ -1,6 +1,8 @@
 @import 'styles/components/topMenu.scss';
 @import 'styles/components/sideMenu.scss';
 @import 'styles/components/photo.scss';
+@import 'styles/ui/input.scss';
+@import 'styles/ui/icon.scss';
 @import 'styles/variables.scss';
 @import 'styles/layouts.scss';
 
@@ -39,5 +41,5 @@ h2 {
 
 @font-face {
     font-family: 'Stardust';
-    src: url('Stardust.ttf');
+    src: url(' ./fonts/Stardust.ttf');
 }

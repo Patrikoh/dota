@@ -1,0 +1,11 @@
+@import 'styles/variables.scss';
+
+.input {
+    padding: 5px;
+    font-size: 20px;
+    border: solid 1px #ccc;
+
+    &.input--with-button {
+        border-right: 0;
+    }
+}

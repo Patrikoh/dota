@@ -60,13 +60,13 @@ class Album extends Component {
                 <Paper className="side-menu l-rows l-flex--2 l-margin-right--big" zDepth={1}>
                     <PhotoFormContainer/>
                     <div className="l-rows">
-                        <h2>Kategorier</h2>
+                        <div className="l-padding-left--big"><h2>Kategorier</h2></div>
                         {photoCategories.map(category => (
                             <div className="l-flex cell"><p>{category}</p></div>
                         ))}
                     </div>
                     <div className="l-rows">
-                        <h2>Album</h2>
+                        <div className="l-padding-left--big"><h2>Album</h2></div>
                         {photoCategories.map(category => (
                             <div className="l-flex cell"><p>{category}</p></div>
                         ))}

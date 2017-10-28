@@ -83,16 +83,23 @@
     min-width: $grid-size * 50;
 }
 //margins and paddings
-.l-padding-sides--big {
+
+.l-padding--small {
+    padding: $grid-size * 4;
+}
+.l-padding-v--big {
     padding-left: $grid-size * 15;
     padding-right: $grid-size * 15;
 }
 
-.l-padding-sides--small {
+.l-padding-v--small {
     padding-left: $grid-size * 4;
     padding-right: $grid-size * 4;
 }
 
+.l-paddings-h--small {
+    padding: $grid-size * 4;
+}
 
 .l-padding-left--small {
     padding-left: $grid-size * 0.5;
@@ -107,7 +114,7 @@
 }
 
 .l-padding-bottom--small {
-    padding-bottom: $grid-size * 0.5;
+    padding-bottom: $grid-size * 4;
 }
 
 .l-padding-bottom--medium {
