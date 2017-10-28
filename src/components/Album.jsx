@@ -53,23 +53,22 @@ class Album extends Component {
         const {photos, filter} = this.props;
         const filteredPhotos = this.splitPhotoList(this.filterPhotoList(photos, filter));
         const photoCategories = this.getPhotoCategories(photos);
-        console.log(photoCategories);
 
         return (
             <div className="l-wrapper">
 
-                <Paper className="side-menu l-rows l-flex--2 l-padding-right--big" zDepth={1}>
+                <Paper className="side-menu l-rows l-flex--2 l-margin-right--big" zDepth={1}>
                     <PhotoFormContainer/>
                     <div className="l-rows">
                         <h2>Kategorier</h2>
                         {photoCategories.map(category => (
-                            <div className="l-flex cell">{category}</div>
+                            <div className="l-flex cell"><p>{category}</p></div>
                         ))}
                     </div>
                     <div className="l-rows">
                         <h2>Album</h2>
                         {photoCategories.map(category => (
-                            <div className="l-flex cell">{category}</div>
+                            <div className="l-flex cell"><p>{category}</p></div>
                         ))}
                     </div>
                 </Paper>

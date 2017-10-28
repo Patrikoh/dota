@@ -1,4 +1,3 @@
-
 @import 'styles/variables.scss';
 
 .side-menu {
@@ -7,15 +6,26 @@
     height: 100%;
     background-color: #524e5f;
     color: #ccc;
-}
 
-.side-menu__menu {
-    font-weight: 400;
-    display: flex;
-    flex-direction: column;
+    .cell {
+        border: solid 1px #ccc;
+        border-bottom: 0;
+        border-right: 0;
 
-    .menu-item {
-        flex: 1;
-        min-width: 200px;
+        p {
+            margin-left: 15px;
+            font-size: 20px;
+            font-weight: 400;
+            color: $color-main-blue;
+        }
+    }
+
+    .cell:last-child {
+        border: solid 1px #ccc;
+        border-right: 0;
+    }
+
+    .cell:hover {
+        background-color: #f7f7f7;
     }
 }
