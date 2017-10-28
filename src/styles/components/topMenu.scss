@@ -1,4 +1,4 @@
-@import '../variables.scss';
+@import 'styles/variables.scss';
 
 .top-menu {
     overflow: hidden;
@@ -13,5 +13,9 @@
         padding-top: 4px;
         width: auto;
         height: 300%;
+    }
+
+    .h1 {
+        font-family: 'Stardust';
     }
 }

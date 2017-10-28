@@ -1,18 +1,8 @@
+import config from '../config/photos.json';
+
+
 const initialState = {
-    photos: [
-        {path: '../photos/malaysia1.jpg', title: 'The first Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the beginning of that trip', tags: ['forest']},
-        {path: '../photos/malaysia2.jpg', title: 'The second Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the middle of that trip', tags: ['forest', 'beach']},
-        {path: '../photos/malaysia3.jpg', title: 'The third Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the end of that trip', tags: ['beach']},
-        {path: '../photos/malaysia1.jpg', title: 'The first Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the beginning of that trip', tags: ['forest']},
-        {path: '../photos/malaysia2.jpg', title: 'The second Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the middle of that trip', tags: ['forest', 'beach']},
-        {path: '../photos/malaysia3.jpg', title: 'The third Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the end of that trip', tags: ['beach']},
-        {path: '../photos/malaysia1.jpg', title: 'The first Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the beginning of that trip', tags: ['forest']},
-        {path: '../photos/malaysia2.jpg', title: 'The second Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the middle of that trip', tags: ['forest', 'beach']},
-        {path: '../photos/malaysia3.jpg', title: 'The third Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the end of that trip', tags: ['beach']},
-        {path: '../photos/malaysia1.jpg', title: 'The first Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the beginning of that trip', tags: ['forest']},
-        {path: '../photos/malaysia2.jpg', title: 'The second Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the middle of that trip', tags: ['forest', 'beach']},
-        {path: '../photos/malaysia3.jpg', title: 'The third Malaysia picture', description: 'This picture is taken during Patriks trip to Malaysia, in the end of that trip', tags: ['sea']},
-    ],
+    photos: Object.values(config.photos),
     selectedPhoto: '',
     filter: ''
 }

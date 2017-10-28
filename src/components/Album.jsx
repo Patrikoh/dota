@@ -13,6 +13,7 @@ class Album extends Component {
                 if (item.tags.includes(filter)) {
                     filteredList.push(item);
                 }
+                return filteredList;
             });
             return filteredList;
         } else {
@@ -29,6 +30,7 @@ class Album extends Component {
             } else {
                 rightColumn.push(item);
             }
+            return true;
         })
         return {leftColumn, rightColumn};
     }
@@ -40,7 +42,9 @@ class Album extends Component {
                 if (!photoCategories.includes(tag)) {
                     photoCategories.push(tag);
                 };
+                return photoCategories;
             });
+            return photoCategories;
         });
         return photoCategories;
     }
@@ -52,40 +56,39 @@ class Album extends Component {
         console.log(photoCategories);
 
         return (
-            <div>
-                <div className="l-flex l-columns ">
-                    <div className="l-flex--2 l-padding-right--big">
-                        <Paper className="side-menu l-rows" zDepth={1}>
-                            <PhotoFormContainer/>
-                            <div className="l-rows">
-                                <h2>Kategorier</h2>
-                                {photoCategories.map(category => (
-                                    <div className="l-flex cell">{category}</div>
-                                ))}
-                            </div>
-                            <div className="l-rows">
-                                <h2>Album</h2>
-                                {photoCategories.map(category => (
-                                    <div className="l-flex cell">{category}</div>
-                                ))}
-                            </div>
-                        </Paper>
-                    </div>
-                    <div className="l-flex--8 l-margin-top--huge l-height--100-top l-overflow--scroll">
-                        <div className="l-columns l-flex">
-                            <div className="l-flex">
-                                {filteredPhotos.leftColumn.map(photo => (<PhotoContainer align='left' photo={photo}/>))}
-                            </div>
-                            <div className="l-flex">
-                                {filteredPhotos.rightColumn.map(photo => (<PhotoContainer align='right' photo={photo}/>))}
-                            </div>
-                        </div>
+            <div className="l-wrapper">
 
+                <Paper className="side-menu l-rows l-flex--2 l-padding-right--big" zDepth={1}>
+                    <PhotoFormContainer/>
+                    <div className="l-rows">
+                        <h2>Kategorier</h2>
+                        {photoCategories.map(category => (
+                            <div className="l-flex cell">{category}</div>
+                        ))}
                     </div>
-                    <div className="l-flex--2 l-padding-left--big">
-                        <Paper className="side-menu" zDepth={1}></Paper>
+                    <div className="l-rows">
+                        <h2>Album</h2>
+                        {photoCategories.map(category => (
+                            <div className="l-flex cell">{category}</div>
+                        ))}
                     </div>
+                </Paper>
+
+                <div className="l-flex--8 l-margin-top--huge l-height--100-top l-overflow--scroll">
+                    <div className="l-columns l-flex">
+                        <div className="l-flex">
+                            {filteredPhotos.leftColumn.map(photo => (<PhotoContainer align='left' photo={photo}/>))}
+                        </div>
+                        <div className="l-flex">
+                            {filteredPhotos.rightColumn.map(photo => (<PhotoContainer align='right' photo={photo}/>))}
+                        </div>
+                    </div>
+
                 </div>
+                <div className="l-flex--2 l-padding-left--big">
+                    <Paper className="side-menu" zDepth={1}></Paper>
+                </div>
+
                 {!!this.props.selectedPhoto
                     ? <PhotoPopupContainer/>
                     : null}

@@ -8,7 +8,7 @@ class Photo extends Component {
             <div className={this.props.align === 'left'
                 ? "l-flex l-padding-right--small l-padding-bottom--medium"
                 : "l-flex l-padding-left--small l-padding-bottom--medium"}>
-                <img onClick={()=>this.props.setSelectedPhoto(photo)} className="l-width--100 photo" src={photo.path} />
+                <img onClick={()=>this.props.setSelectedPhoto(photo)} className="l-width--100 photo" src={photo.path} alt=""/>
             </div>
         );
     }

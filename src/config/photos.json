@@ -1,0 +1,31 @@
+{
+    "photos": [
+        {
+            "path": "http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/free-nature-backgrounds-wallpapers.jpg",
+            "description": "This picture is taken during Patriks trip to Malaysia, in the beginning of that trip",
+            "tags": ["forest"]
+        },
+        {
+            "path": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gullmarsskogen_nature_reserve.jpg",
+            "description": "This picture is taken during Patriks trip to Malaysia, in the beginning of that trip",
+            "tags": ["forest", "mushroom"]
+        },
+        {
+            "path": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gullmarsskogen_nature_reserve.jpg",
+            "description": "This picture is taken during Patriks trip to Malaysia, in the beginning of that trip",
+            "tags": ["forest", "mushroom"]
+        },
+        {
+            "path": "http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/free-nature-backgrounds-wallpapers.jpg",
+            "description": "This picture is taken during Patriks trip to Malaysia, in the beginning of that trip",
+            "tags": ["forest"]
+        },
+        {
+            "path": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gullmarsskogen_nature_reserve.jpg",
+            "description": "This picture is taken during Patriks trip to Malaysia, in the beginning of that trip",
+            "tags": ["forest", "mushroom"]
+        }
+
+
+    ]
+}

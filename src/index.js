@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
-import './styles/main.scss';
+import './styles/main.css';
 import App from './App';
 import rootReducer from './reducers/rootReducer'
 import injectTapEventPlugin from 'react-tap-event-plugin'

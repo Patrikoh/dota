@@ -1,10 +1,9 @@
-
-@import './components/photo.scss';
-@import './components/sideMenu.scss';
-@import './components/topMenu.scss';
-@import './variables.scss';
-
-
+@import 'styles/components/topMenu.scss';
+@import 'styles/components/sideMenu.scss';
+@import 'styles/components/photo.scss';
+@import 'styles/tables.scss';
+@import 'styles/variables.scss';
+@import 'styles/layouts.scss';
 
 body {
     background-color: #d6d6d6;
@@ -35,4 +34,10 @@ h2 {
 .top-component {
     height: 100%;
     overflow: hidden;
+}
+
+
+@font-face {
+    font-family: Stardust;
+    src: url('Stardust.ttf');
 }

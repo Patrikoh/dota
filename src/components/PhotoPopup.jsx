@@ -16,7 +16,7 @@ class PhotoPopup extends Component {
                                     <path d="M0 0h24v24H0z" fill="none"/>
                                 </svg>
                             </div>
-                            <img src={photo.path}/>
+                            <img src={photo.path} alt=""/>
                             <div className="photo-popup--desc">
                                 {photo.description}
                             </div>
