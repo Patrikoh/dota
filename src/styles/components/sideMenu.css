@@ -2,19 +2,31 @@
   flex: 1;
   padding-top: 100px;
   height: 100%;
-  background-color: #524e5f;
   color: #ccc; }
+  .side-menu .header {
+    flex: 1;
+    background-color: #3f3b4c;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .side-menu .header h2 {
+      margin: 5px;
+      font-size: 18px;
+      font-weight: 400; }
   .side-menu .cell {
-    border: solid 1px #ccc;
+    border: solid 1px #efefef;
     border-bottom: 0;
-    border-right: 0; }
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-right: 10px; }
     .side-menu .cell p {
-      margin-left: 15px;
-      font-size: 20px;
+      padding-left: 10px;
+      font-size: 16px;
       font-weight: 400;
       color: #3f3b4c; }
   .side-menu .cell:last-child {
-    border: solid 1px #ccc;
-    border-right: 0; }
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; }
   .side-menu .cell:hover {
     background-color: #f7f7f7; }

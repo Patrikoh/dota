@@ -87,7 +87,7 @@
 .l-padding--small {
     padding: $grid-size * 4;
 }
-.l-padding-v--big {
+.l-padding-sides--big {
     padding-left: $grid-size * 15;
     padding-right: $grid-size * 15;
 }
@@ -101,19 +101,27 @@
     padding: $grid-size * 4;
 }
 
-.l-padding-left--small {
+.l-padding-left--tiny {
     padding-left: $grid-size * 0.5;
 }
 
-.l-padding-right--small {
+.l-padding-right--tiny {
     padding-right: $grid-size * 0.5;
 }
 
-.l-padding-top--small {
-    padding-top: $grid-size * 0.5;
+.l-padding-left--big {
+    padding-left: $grid-size * 4;
 }
 
-.l-padding-bottom--small {
+.l-padding-right--big {
+    padding-right: $grid-size * 4;
+}
+
+.l-padding-top--big {
+    padding-top: $grid-size * 4;
+}
+
+.l-padding-bottom--big {
     padding-bottom: $grid-size * 4;
 }
 
@@ -133,11 +141,11 @@
     padding-top: $grid-size;
 }
 
-.l-padding-left--big {
+.l-padding-left--small {
     padding-left: $grid-size * 2;
 }
 
-.l-padding-right--big {
+.l-padding-right--small {
     padding-right: $grid-size * 2;
 }
 

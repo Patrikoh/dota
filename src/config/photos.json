@@ -4,31 +4,31 @@
             "path": "http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/free-nature-backgrounds-wallpapers.jpg",
             "title": "Det fina trädet",
             "description": "Den här bilden föreställer ett fint träd.",
-            "tags": ["forest"]
+            "tags": ["Skog"]
         },
         {
             "path": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gullmarsskogen_nature_reserve.jpg",
             "title": "En grön skog",
             "description": "Några fina träd med svampar på.",
-            "tags": ["forest", "mushroom"]
+            "tags": ["Skog", "Träd", "Svampar"]
         },
         {
             "path": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gullmarsskogen_nature_reserve.jpg",
             "title": "En grön skog",
             "description": "Några fina träd med svampar på. Några fina träd med svampar på, några fina träd med svampar på. Några fina träd med svampar på.",
-            "tags": ["forest", "mushroom"]
+            "tags": ["Svampar", "Träd"]
         },
         {
             "path": "http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/free-nature-backgrounds-wallpapers.jpg",
             "title": "Ängen",
             "description": "Det här är en av mina favoritbilder.",
-            "tags": ["forest"]
+            "tags": ["Natur", "Utomhus"]
         },
         {
             "path": "https://upload.wikimedia.org/wikipedia/commons/5/55/Gullmarsskogen_nature_reserve.jpg",
             "title": "Ännu en skog",
             "description": "Ännu en skog med massa svampar.",
-            "tags": ["forest", "mushroom"]
+            "tags": ["Svampar", "Tallar"]
         }
     ]
 }

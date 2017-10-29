@@ -35,7 +35,8 @@
 
 .photo-popup--desc {
   background-color: #fff;
-  width: 100%;
+  width: auto;
+  word-wrap: break-word;
   height: 150px;
   padding-top: 30px; }
   .photo-popup--desc p {

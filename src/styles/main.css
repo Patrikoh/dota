@@ -17,20 +17,32 @@
   flex: 1;
   padding-top: 100px;
   height: 100%;
-  background-color: #524e5f;
   color: #ccc; }
+  .side-menu .header {
+    flex: 1;
+    background-color: #3f3b4c;
+    color: #fff;
+    padding-left: 5px;
+    padding-right: 5px; }
+    .side-menu .header h2 {
+      margin: 5px;
+      font-size: 18px;
+      font-weight: 400; }
   .side-menu .cell {
-    border: solid 1px #ccc;
+    border: solid 1px #efefef;
     border-bottom: 0;
-    border-right: 0; }
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    margin-right: 10px; }
     .side-menu .cell p {
-      margin-left: 15px;
-      font-size: 20px;
+      padding-left: 10px;
+      font-size: 16px;
       font-weight: 400;
       color: #3f3b4c; }
   .side-menu .cell:last-child {
-    border: solid 1px #ccc;
-    border-right: 0; }
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; }
   .side-menu .cell:hover {
     background-color: #f7f7f7; }
 
@@ -71,7 +83,8 @@
 
 .photo-popup--desc {
   background-color: #fff;
-  width: 100%;
+  width: auto;
+  word-wrap: break-word;
   height: 150px;
   padding-top: 30px; }
   .photo-popup--desc p {
@@ -176,7 +189,7 @@
 .l-padding--small {
   padding: 40px; }
 
-.l-padding-v--big {
+.l-padding-sides--big {
   padding-left: 150px;
   padding-right: 150px; }
 
@@ -187,16 +200,22 @@
 .l-paddings-h--small {
   padding: 40px; }
 
-.l-padding-left--small {
+.l-padding-left--tiny {
   padding-left: 5px; }
 
-.l-padding-right--small {
+.l-padding-right--tiny {
   padding-right: 5px; }
 
-.l-padding-top--small {
-  padding-top: 5px; }
+.l-padding-left--big {
+  padding-left: 40px; }
 
-.l-padding-bottom--small {
+.l-padding-right--big {
+  padding-right: 40px; }
+
+.l-padding-top--big {
+  padding-top: 40px; }
+
+.l-padding-bottom--big {
   padding-bottom: 40px; }
 
 .l-padding-bottom--medium {
@@ -211,10 +230,10 @@
 .l-padding-top--medium {
   padding-top: 10px; }
 
-.l-padding-left--big {
+.l-padding-left--small {
   padding-left: 20px; }
 
-.l-padding-right--big {
+.l-padding-right--small {
   padding-right: 20px; }
 
 .l-padding-top--huge {
