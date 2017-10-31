@@ -1,5 +1,5 @@
 import {connect} from 'react-redux'
-import {addPhoto} from '../actions'
+import {addPhoto, setFilteredPhotos, setPhotoCategories} from '../actions'
 import Album from '../components/Album.jsx'
 
 const mapStateToProps = (state) => {
@@ -14,6 +14,12 @@ const mapDispatchToProps = (dispatch) => {
     return {
         addPhoto: (newPhoto) => {
             dispatch(addPhoto(newPhoto))
+        },
+        setFilteredPhotos: (filteredPhotos) => {
+            dispatch(setFilteredPhotos(filteredPhotos))
+        },
+        setPhotoCategories: (categories) => {
+            dispatch(setPhotoCategories(categories))
         }
     }
 }

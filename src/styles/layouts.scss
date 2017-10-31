@@ -4,14 +4,16 @@
     height: 100%;
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+}
+
+.l-flex-nowrap {
+    flex-wrap: nowrap;
 }
 
 //flex
 .l-columns {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .l-rows {
@@ -125,6 +127,10 @@
     padding-bottom: $grid-size * 4;
 }
 
+.l-padding-top--huge {
+    padding-top: $grid-size * 15;
+}
+
 .l-padding-bottom--medium {
     padding-bottom: $grid-size;
 }
@@ -147,10 +153,6 @@
 
 .l-padding-right--small {
     padding-right: $grid-size * 2;
-}
-
-.l-padding-top--huge {
-    padding-top: $grid-size * 15;
 }
 
 .l-margin-top--big {

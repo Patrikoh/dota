@@ -13,6 +13,13 @@
       margin: 5px;
       font-size: 18px;
       font-weight: 400; }
+  .side-menu .menu-block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px; }
+    @media screen and (max-width: 1200px) {
+      .side-menu .menu-block {
+        padding-top: 50px; } }
   .side-menu .cell {
     border: solid 1px #efefef;
     border-bottom: 0;

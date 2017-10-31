@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Paper from 'material-ui/Paper';
 import PhotoContainer from '../containers/PhotoContainer.js';
 import PhotoPopupContainer from '../containers/PhotoPopupContainer.js';
-import PhotoFormContainer from '../containers/PhotoFormContainer.js';
+import SideMenuContainer from '../containers/SideMenuContainer.js';
 
 class Album extends Component {
 
@@ -49,38 +49,26 @@ class Album extends Component {
         return photoCategories;
     }
 
+
     render() {
-        const {photos, filter} = this.props;
-        const filteredPhotos = this.splitPhotoList(this.filterPhotoList(photos, filter));
-        const photoCategories = this.getPhotoCategories(photos);
+
+        this.filteredPhotos = this.splitPhotoList(this.filterPhotoList(this.props.photos, this.props.filter));
+        this.photoCategories = this.getPhotoCategories(this.props.photos);
+
+        this.props.setFilteredPhotos(this.filteredPhotos);
+        this.props.setPhotoCategories(this.photoCategories);
 
         return (
             <div className="l-wrapper">
-
-                <Paper className="side-menu l-rows l-flex--2 l-margin-right--big" zDepth={1}>
-                    <PhotoFormContainer/>
-                    <div className="l-rows l-padding-top--huge l-padding-left--small">
-                        <div className="l-columns">
-                            <div className="header">
-                                <h2>Kategorier</h2>
-                            </div>
-                            <div className="l-flex--3"/>
-                        </div>
-                        {photoCategories.map(category => (
-                            <div className="l-flex cell">
-                                <p>{category}</p>
-                            </div>
-                        ))}
-                    </div>
-                </Paper>
+                <SideMenuContainer />
 
                 <div className="l-flex--8 l-margin-top--huge l-height--100-top l-overflow--scroll">
                     <div className="l-columns l-flex">
                         <div className="l-flex">
-                            {filteredPhotos.leftColumn.map(photo => (<PhotoContainer align='left' photo={photo}/>))}
+                            {this.filteredPhotos.leftColumn.map(photo => (<PhotoContainer align='left' photo={photo}/>))}
                         </div>
                         <div className="l-flex">
-                            {filteredPhotos.rightColumn.map(photo => (<PhotoContainer align='right' photo={photo}/>))}
+                            {this.filteredPhotos.rightColumn.map(photo => (<PhotoContainer align='right' photo={photo}/>))}
                         </div>
                     </div>
 

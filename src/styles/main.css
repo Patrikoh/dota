@@ -28,6 +28,13 @@
       margin: 5px;
       font-size: 18px;
       font-weight: 400; }
+  .side-menu .menu-block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px; }
+    @media screen and (max-width: 1200px) {
+      .side-menu .menu-block {
+        padding-top: 50px; } }
   .side-menu .cell {
     border: solid 1px #efefef;
     border-bottom: 0;
@@ -126,13 +133,14 @@
 .l-wrapper {
   height: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  flex-direction: row; }
+
+.l-flex-nowrap {
+  flex-wrap: nowrap; }
 
 .l-columns {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; }
+  flex-direction: row; }
 
 .l-rows {
   display: flex;
@@ -218,6 +226,9 @@
 .l-padding-bottom--big {
   padding-bottom: 40px; }
 
+.l-padding-top--huge {
+  padding-top: 150px; }
+
 .l-padding-bottom--medium {
   padding-bottom: 10px; }
 
@@ -235,9 +246,6 @@
 
 .l-padding-right--small {
   padding-right: 20px; }
-
-.l-padding-top--huge {
-  padding-top: 150px; }
 
 .l-margin-top--big {
   margin-top: 65px; }
