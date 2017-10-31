@@ -5,7 +5,7 @@ import Paper from 'material-ui/Paper';
 class SideMenu extends Component {
 
     render() {
-        const {filteredPhotos, photoCategories} = this.props;
+        const {photoCategories} = this.props;
         return (
             <Paper className="side-menu l-rows l-flex--2 l-margin-right--big" zDepth={1}>
                 <div className="l-flex-nowrap l-padding-top--huge l-padding-left--small l-columns">
