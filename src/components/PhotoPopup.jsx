@@ -7,8 +7,9 @@ class PhotoPopup extends Component {
         return (
             <div className="grey-out">
                 <div className="photo-popup">
-                    <div className="photo-popup--img-wrapper">
-                        <div className="photo-popup--img">
+                    <div className="photo-popup--wrapper">
+
+                        <div className="photo-popup--back">
                             <div className="photo-popup--top">
                                 {photo.title}
                                 <svg onClick={() => this.props.handleClose()} fill="#000000" height="36" viewBox="0 0 24 24" width="36" xmlns="http://www.w3.org/2000/svg">
@@ -16,7 +17,10 @@ class PhotoPopup extends Component {
                                     <path d="M0 0h24v24H0z" fill="none"/>
                                 </svg>
                             </div>
-                            <img src={photo.path} alt=""/>
+
+
+                            <div className="photo-popup--img"><img src={photo.path} alt=""/></div>
+
                             <div className="photo-popup--desc l-rows">
                                 <p className="l-flex">{photo.description}</p>
                                 <div className="l-columns l-padding-bottom--small">

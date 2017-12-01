@@ -3,6 +3,9 @@
   padding-top: 100px;
   height: 100%;
   color: #ccc; }
+  @media screen and (max-width: 800px) {
+    .side-menu {
+      display: none; } }
   .side-menu .header {
     flex: 1;
     background-color: #3f3b4c;

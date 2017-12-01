@@ -5,6 +5,10 @@
     padding-top: $grid-size * 10;
     height: 100%;
     color: #ccc;
+    @media screen
+      and (max-width: 800px) {
+        display: none;
+    }
 
     .header {
         flex: 1;

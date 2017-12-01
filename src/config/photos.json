@@ -1,7 +1,7 @@
 {
     "photos": [
         {
-            "path": "http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/free-nature-backgrounds-wallpapers.jpg",
+            "path": "https://static.pexels.com/photos/110812/pexels-photo-110812.jpeg",
             "title": "Det fina trädet",
             "description": "Den här bilden föreställer ett fint träd.",
             "tags": ["Skog"]
@@ -19,7 +19,7 @@
             "tags": ["Svampar", "Träd"]
         },
         {
-            "path": "http://www.hdwallpapers3d.com/wp-content/uploads/2013/05/free-nature-backgrounds-wallpapers.jpg",
+            "path": "https://static.pexels.com/photos/110812/pexels-photo-110812.jpeg",
             "title": "Ängen",
             "description": "Det här är en av mina favoritbilder.",
             "tags": ["Natur", "Utomhus"]
