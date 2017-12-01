@@ -48,6 +48,10 @@
             font-weight: 400;
             color: #3f3b4c;
         }
+
+        &.cell--clicked {
+          background-color: #ccc;
+        }
     }
 
     .cell:last-child {

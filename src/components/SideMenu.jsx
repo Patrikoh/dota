@@ -24,7 +24,7 @@ class SideMenu extends Component {
                         <div className="l-flex--3"/>
                     </div>
                     {photoCategories.map(category => (
-                        <div className="l-flex cell">
+                        <div onClick={()=> this.props.handleSubmit(category)} className="l-flex cell">
                             <p>{category}</p>
                         </div>
                     ))}

@@ -49,9 +49,7 @@ class Album extends Component {
         return photoCategories;
     }
 
-
     render() {
-
         this.filteredPhotos = this.splitPhotoList(this.filterPhotoList(this.props.photos, this.props.filter));
         this.photoCategories = this.getPhotoCategories(this.props.photos);
 
