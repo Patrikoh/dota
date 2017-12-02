@@ -34,6 +34,8 @@
       font-size: 16px;
       font-weight: 400;
       color: #3f3b4c; }
+    .side-menu .cell.cell--clicked {
+      background-color: #ccc; }
   .side-menu .cell:last-child {
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;

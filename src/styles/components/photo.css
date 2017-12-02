@@ -32,19 +32,10 @@
     float: right;
     padding: 6px; }
 
-.photo-popup--img {
-  max-height: 780px; }
-  @media (max-width: 1000px) {
-    .photo-popup--img {
-      max-height: 600px; } }
-  @media (max-width: 800px) {
-    .photo-popup--img {
-      max-height: 500px; } }
-  .photo-popup--img img {
-    height: 90%;
-    width: auto;
-    max-height: inherit;
-    box-sizing: border-box; }
+.photo-popup--img img {
+  width: auto;
+  max-height: inherit;
+  box-sizing: border-box; }
 
 .photo-popup--desc {
   position: absolute;

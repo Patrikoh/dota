@@ -1,21 +1,24 @@
 @import 'styles/variables.scss';
 
 .top-menu {
+    display: flex;
+    flex-direction: row;
     overflow: hidden;
     position: fixed;
     width: 100%;
-    height: $grid-size * 15;
+    height: $grid-size * 10;
     box-shadow: rgba(0, 0, 0, .5) 0 1px 6px;
     background-color: $color-blue-main;
 
     .top-menu--image {
-        float:right;
-        padding-top: 4px;
-        width: auto;
-        height: 300%;
+        flex: 1;
+        padding: $grid-size;
+
     }
 
-    .h1 {
+    h1 {
+      text-align: right;
+              margin-top: 25px;
         font-family: 'Stardust';
     }
 }

@@ -2,6 +2,13 @@ import React, {Component} from 'react';
 
 class PhotoPopup extends Component {
 
+
+    componentWillMount() {
+      this.setState({
+        imageHeight: (window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight) - 240
+      });
+    }
+
     render() {
         const photo = this.props.photo;
         return (
@@ -18,8 +25,7 @@ class PhotoPopup extends Component {
                                 </svg>
                             </div>
 
-
-                            <div className="photo-popup--img"><img src={photo.path} alt=""/></div>
+                            <div className="photo-popup--img"><img src={photo.path} style={{height: this.state.imageHeight + 'px'}} alt=""/></div>
 
                             <div className="photo-popup--desc l-rows">
                                 <p className="l-flex">{photo.description}</p>
